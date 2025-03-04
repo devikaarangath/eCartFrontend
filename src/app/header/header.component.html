@@ -1,0 +1,28 @@
+  <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container px-4 px-lg-5">
+        <a class="navbar-brand" routerLink="">
+            <i class="fa-regular fa-cart-shopping"></i>
+            Lilly's Cart</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="me-5">
+                <input  (keyup)="search($event)" type="text" placeholder="search your products" class="form-control">
+            </div>
+            <form class="d-flex ms-5">
+                <!-- wishlist button -->
+                <button class="btn btn-outline-light ms-5" type="submit" routerLink="products/wishList">
+                    <i class="fa-solid fa-heart fa-beat text-danger"></i>
+                    wishlist
+                    
+                </button>
+               <!-- cart button -->
+                <button class="btn btn-outline-light ms-5" type="submit " routerLink="products/cart">
+                    <i class="fa-solid fa-cart-shopping fa-beat text-warning"></i>
+                    Cart
+                    <span class="badge  text-dark ms-1 rounded-pill">{{cartcounts}}</span>
+                </button>
+            </form>
+        </div>
+    </div>
+</nav>

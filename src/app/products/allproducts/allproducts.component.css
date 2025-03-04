@@ -1,0 +1,16 @@
+.banner{
+    background-image: url(https://img.freepik.com/free-photo/shopping-cart-dark-background-with-copy-space_23-2148283846.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 450px;
+}
+.card img{
+    transition: 3s;
+}
+.card img:hover{
+    transform: scale(1.2);
+    transition: 2s;
+
+}
